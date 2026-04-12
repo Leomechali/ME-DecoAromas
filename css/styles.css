@@ -80,7 +80,7 @@ nav {
 /*    Portada    */
 
 .hero {
-    background-image: url("/img/hero-bg.jpg");
+    background-color: #ff0000;
     background-size: cover;
     background-position: center;
     position: relative;
