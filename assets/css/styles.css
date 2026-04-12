@@ -1,0 +1,337 @@
+/*    RESET     */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Bree Serif", serif;
+    color: #e8b7b7;
+    padding-top: 5rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wpplogofixed {
+    background-color: #ffffff;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1rem;
+    z-index: 9999;
+    border: 1px solid #b4b4b4;
+
+}
+
+.wpplogo {
+    width: 6rem;
+    height: 6rem;
+}
+
+/*    NAVEGACIÓN    */
+
+nav {
+    background-color: #f8f5f2b3;
+    backdrop-filter: var(12px);
+    padding: 1px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+    display: block;
+    border-radius: 2rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    color: #937c6c;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.nav-links a:hover {
+    color: #000000;
+}
+
+/*    Portada    */
+
+.hero {
+    background-image: url("/assets/img/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    padding: 40px 20px;
+    min-height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+
+}
+
+.hero-logo-circulo {
+    width: 130px;
+    height: 130px;
+    min-width: 130px;
+    border-radius: 50%;
+    background-color: #d2b48c4d;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-logo-circulo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-tarjeta {
+    background-color: #1e0f0a8c;
+    border: 1px solid #ffffff26;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 28px 36px;
+    max-width: 700px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3.75rem;
+    line-height: 1.25;
+    color: #ffffff;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.hero-eslogan {
+    font-size: 16px;
+    color: #e8d5b7;
+}
+
+.hero-boton {
+    display: inline-block;
+    background-color: #d4a843;
+    color: #3a2000;
+    padding: 14px 40px;
+    border-radius: 40px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-boton:hover {
+    background-color: #d1c19d;
+}
+
+/*    PRODUCTOS    */
+
+.productos {
+    padding: 60px 40px;
+}
+
+.productos h2,
+.nosotros h2,
+.contacto h2 {
+    text-align: center;
+    color: #180f02;
+    font-size: 14px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.grilla {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tarjeta {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #d6b498;
+}
+
+.tarjeta img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.tarjeta h3 {
+    color: #d4af7a;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-weight: normal;
+}
+
+.tarjeta p {
+    font-size: 13px;
+    color: #9a8060;
+    line-height: 1.6;
+}
+
+.tarjeta:hover {
+    background-color: #9b9b9b6b;
+}
+
+/*    NOSOTROS    */
+
+.nosotros {
+    background: #0d0520;
+    padding: 60px 40px;
+    text-align: center;
+    border-top: 1px solid #4a2060;
+    border-bottom: 1px solid #4a2060;
+}
+
+.nosotros p {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #b09878;
+    font-size: 15px;
+}
+
+/*    CONTACTO    */
+
+.contacto {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.contacto p {
+    font-size: 14px;
+    color: #a89070;
+    line-height: 2.5;
+}
+
+/*    FOOTER    */
+
+footer {
+    background: #0d0520;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #4a2060;
+}
+
+footer p {
+    font-size: 12px;
+    color: #5a4040;
+    letter-spacing: 1px;
+}
+
+/*    RESPONSIVE — TABLET    */
+
+@media (max-width: 768px) {
+    .grilla {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    nav {
+        padding: 14px 20px;
+    }
+}
+
+/*    RESPONSIVE — MOBILE    */
+
+@media (max-width: 480px) {
+    .hero-tarjeta {
+        flex-direction: column;
+        text-align: center;
+        padding: 24px 20px;
+    }
+
+    .hero-logo-circulo {
+        width: 90px;
+        height: 90px;
+        min-width: 90px;
+    }
+
+    .hero-texto h1 {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+
+    .grilla {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        display: none;
+        /* En mobile se ocultaría el menú */
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero {
+        padding: 50px 16px;
+    }
+
+    .productos,
+    .nosotros,
+    .contacto {
+        padding: 40px 16px;
+    }
+}
