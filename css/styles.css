@@ -317,7 +317,7 @@ footer p {
     }
 
     .nav-links {
-        display: none;
+        display: block;
         /* En mobile se ocultaría el menú */
     }
 
